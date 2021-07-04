@@ -1,0 +1,36 @@
+# Vapor 4 + Svelte + Inertia + Laravel Mix
+
+image:https://user-images.githubusercontent.com/292738/124379293-233e2080-dc84-11eb-801d-8268aaf29685.png[]
+
+This is a sample project that implements:
+
+- https://vapor.codes/[Vapor 4.0]
+- https://developer.apple.com/swift/[Swift 5.4]
+- https://inertiajs.com/[InertiaJS]
+- https://svelte.dev/[Svelte]
+- https://laravel-mix.com/[Laravel Mix]
+- https://github.com/vapor/leaf[Leaf Templates]
+
+The Inertia Adapter was based on https://github.com/lloople/vapor-inertia-adapter
+and heavily modified so it is properly working. Thats why is in _Deps_ directory.
+
+This is just a sample implementation. May be a better approach is possible.
+Please experiment and see if this works for your use case.
+
+## webpack.mix.js
+
+The _webpack.mix.js_ was modified in order to generate a _Sources/App/mix.swift_ file
+that will contain the values of _mix-manifest.json_.
+
+Modify _vapor.mix.js_ to your needs.
+
+## Commands
+
+- `make install`: Will install _npm_modules_ directory.
+- `make webpack-watch`: Will run the _Laravel Mix_ watcher for any change inside the _Resources/js_ directory.
+- `make run`: Will execute the Vapor Server.
+
+## Credits
+++++
+Made with <i class="fa fa-heart">&#9829;</i> by <a href="https://ninjas.cl" target="_blank">Ninjas.cl</a>.
+++++

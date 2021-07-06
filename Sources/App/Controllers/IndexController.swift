@@ -6,12 +6,11 @@ struct IndexController: RouteCollection {
     }
 
     func index(_ req: Request) -> EventLoopFuture<Response> {
-        return req.inertia.render(
+        return req.inertiaRender(
             "Home/Index",
             [
                 "hello": "world"
-            ], 
-            for:req
+            ]
         )
     }
 }

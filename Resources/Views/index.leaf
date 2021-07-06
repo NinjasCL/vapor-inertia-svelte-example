@@ -8,6 +8,6 @@
   <script src='#mix("/js/app.js")' defer></script>
 </head>
 <body>
-  #inertia(json)
+  #inertia()
 </body>
 </html>

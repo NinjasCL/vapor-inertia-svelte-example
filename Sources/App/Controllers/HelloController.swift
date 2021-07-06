@@ -6,8 +6,8 @@ struct HelloController: RouteCollection {
     }
 
     func index(_ req: Request) -> EventLoopFuture<Response> {
-        return req.inertia.render("Home/Hello", [
+        return req.inertiaRender("Home/Hello", [
             "welcome": "to the future"
-        ], for:req)
+        ])
     }
 }
